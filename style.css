@@ -1,0 +1,500 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.header{
+    /* border: 2px solid black; */
+    max-width: 95%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+.leftdata{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.logotext{
+    font-size: 1.785rem;
+    font-weight: bolder;
+}
+
+.textofleftside{
+    font-size: 1.01rem;
+    font-weight: 700;
+    color: rgb(145, 145, 145);
+    display: flex;
+    margin: -1rem;
+}
+
+.rightdata{
+    margin: 1rem;
+    display: flex;
+    gap: 1.785rem;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.signupbutton{
+    text-align: center;
+    width: 6rem;
+    background-color: rgb(41, 214, 212);
+    font-weight: 700;
+    color: aliceblue;
+    padding: .375rem;
+    border-radius: 1rem;
+}
+
+.loginbutton{
+    color: rgb(145, 145, 145);
+    font-weight: 700;
+}
+
+.headertext:hover{
+    color: rgb(97, 227, 241);
+}
+
+.loginbutton:hover{
+    color: rgb(97, 227, 241);
+}
+
+.logotext:hover{
+    text-shadow: -2px 2px 2px  rgb(224, 215, 215);
+}
+
+.signupbutton:hover{
+    background-color:  rgb(134, 220, 230);
+}
+
+.getstarted:hover{
+    background-color:  rgb(134, 220, 230);
+}
+
+
+.maincontent{
+    max-width: 95%;
+    margin: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    animation: slidefromleft 2s ease forwards;
+    opacity: 0;
+}
+
+
+@keyframes slidefromleft {
+
+0% {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+}
+
+.leftmaincontent{
+    /* border: 2px dotted blue; */
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: 2.7865rem;
+}
+
+.heading1{
+    font-size: 2.7865rem;
+    font-weight: bolder;
+}
+
+.para{
+    font-weight: 500;
+    color: rgb(167, 161, 161);
+}
+
+.getstarted{
+    text-align: center;
+    width: 7.785rem;
+    background-color: rgb(41, 214, 212);
+    font-weight: 700;
+    color: aliceblue;
+    padding: .375rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.pic1{
+    background-color: none;
+    margin-right: 5rem;
+}
+
+.boxforlink{
+    /* border: 2px solid pink; */
+    max-width: 85%;
+    display: flex;
+    margin-left: 3rem;
+    padding: 1.5rem;
+    gap: .786rem;
+    background-color: rgb(83, 83, 129);
+    border-radius: .5rem;
+    animation: slidefromleft 2.3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slidefromleft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    }
+
+
+.linkpaste{
+    /* border: 1px solid black; */
+    width: 75%;
+    padding: .5rem;
+    margin-left: 3rem;
+    border-radius: .3rem;
+    color: rgb(218, 220, 222);
+    font-weight: 500;
+}
+
+
+.shortenbutton{
+    padding: .5rem;
+    /* border: 1px solid rgb(94, 32, 32); */
+    border-radius: .3rem;
+    background-color: rgb(41, 214, 212);
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.shortenbutton:hover{
+    background-color:  rgb(134, 220, 230);
+}
+
+.maindatabox{
+    height: 90%;
+    /* border: 2px solid red; */
+    /* margin: 1rem; */
+    /* margin-left: 7rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: rgba(228, 222, 222, 0.464);
+}
+
+
+.databoxtext{
+    max-width: 35%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin-top: 1rem;
+}
+
+
+.advancetext{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.paraofdatabox{
+    font-weight: 500;
+    color: rgb(156, 154, 154);
+    text-align: center;
+}
+
+.databoxes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1rem;
+    /* border: 2px solid black; */
+    max-width: 85%;
+    /* text-align: center; */
+}
+
+.databox{
+    /* border: 3px solid greenyellow; */
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin: .5rem;
+    border-radius: .7rem;
+    height: 14rem;
+    gap: .3rem;
+    /* align-items: center; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.databox:hover{
+    box-shadow: 2px 2px 5px  rgb(41, 214, 212),-2px 2px 4px  rgb(41, 214, 212);
+    transform: scale(1.1);
+}
+
+
+.databoxheading{
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+
+.databox1{
+    margin-top: 0.5rem;
+}
+
+.databox2{
+    margin-top: 3rem;
+}
+
+.databox3{
+    margin-top: 6rem;
+}
+
+.iconpic{
+    height: 4rem;
+    width: 4rem;
+    /* background-color: white; */
+    border-radius: 2rem;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.databoxcontent{
+    /* border: 2px solid goldenrod; */
+    position: relative;
+    bottom: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boostbox{
+    /* border: 2px solid blueviolet; */
+    background-color: rgb(83, 83, 129);
+    text-align: center;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boosttext{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: white;
+}
+.getstartedbutton{
+    padding: .5rem;
+    border-radius: .786em;
+    background-color: rgb(41, 214, 212);
+    color: aliceblue;
+    font-weight: 700;
+    width: max-content;
+}
+
+.colorchange:hover{
+    color: rgb(41, 214, 212);
+}
+
+.getstartedbutton:hover{
+    background-color:  rgb(134, 220, 230);
+}
+
+.footermainbox{
+    background-color: rgb(28, 39, 78);
+    height: fit-content;
+    padding: 1rem;
+}
+
+.footerdata{
+    max-width: 85%;
+    height: 90%;
+    margin-left: 7rem;
+    /* border: 2px solid white; */
+    display: flex;
+    gap: 8rem;
+    padding-top: 2rem;
+}
+
+.footerlogotext{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.rightmainbox{
+    color: white;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+
+.boxsamedata{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,1fr);
+    /* border: 2px solid red; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.headingoffooterbox{
+    font-weight: 700;
+}
+
+.dataoffooterbox{
+    color: rgb(214, 211, 211);
+    font-weight: 400;
+}
+
+.rightboxicons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footerlogo{
+    height: 1.7rem;
+    width: 1.5rem;
+    margin-top: 1rem;
+}
+
+.colortext:hover{
+    textcolor:  1px 1px 1px rgb(169, 38, 38);
+}
+
+/* adding new details to make it responsive  */
+
+@media screen and (max-width:800px) {
+    .headertext{
+        display: none;
+    }
+}  
+
+@media screen and (max-width:700px) {
+    .maincontent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftmaincontent{
+        max-width: 100%;
+    }
+
+}  
+
+@media screen and (max-width:885px) {
+    .boxforlink{
+        max-width: 60%;
+    }
+    .linkpaste{
+        max-width: 50%;
+        margin-right: 1rem;
+    }
+}  
+
+@media screen and (max-width:650px) {
+    .boxforlink{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    .linkpaste{
+        max-width: 100%;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .maindatabox{
+        height: fit-content;
+        padding: 1rem;
+    }
+    .databoxes{
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .databox3{
+        position: relative;
+        bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .boosttext{
+        width: max-content;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .rightboxicons{
+        flex-direction: column;
+    }
+    .rightmainbox{
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:770px){
+    .footerdata{
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:670px){
+    .rightmainbox{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .rightboxicons{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .rightmainbox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footerdata{
+        gap: 3rem;
+        margin-left: 3rem;
+    }
+}
